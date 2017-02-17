@@ -1,5 +1,7 @@
 package com.zs.book.activity;
 
+import android.widget.Toast;
+
 import com.zs.book.base.BaseActivity;
 
 /**
@@ -8,7 +10,7 @@ import com.zs.book.base.BaseActivity;
 public class HomeActivity extends BaseActivity {
     @Override
     protected void initBefore() {
-
+        //测试测试
     }
 
     @Override
