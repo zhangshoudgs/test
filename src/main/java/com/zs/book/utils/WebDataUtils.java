@@ -8,7 +8,7 @@ public class WebDataUtils {
 	private static final String showapi_sign = "714b756c93124a1ba98195c99590fa6f";
 
 	/**
-	 * Ğ¦»° ´¿Í¼Æ¬ ½Ó¿ÚÁ¬½Ó
+	 * ç¬‘è¯ çº¯å›¾ç‰‡ æ¥å£è¿æ¥
 	 */
 	public static String getJOKE_PIC(int newPage) {
 		String JOKE_PIC = "https://route.showapi.com/341-2?maxResult=10&page="
@@ -20,7 +20,7 @@ public class WebDataUtils {
 	}
 
 	/**
-	 * Ğ¦»° ´¿ÎÄ×Ö ½Ó¿ÚÁ¬½Ó
+	 * ç¬‘è¯ çº¯æ–‡å­— æ¥å£è¿æ¥
 	 */
 	public static String getJOKE_TEXT(int newPage) {
 		String JOKE_TEXT = "https://route.showapi.com/341-1?maxResult=20&page="
@@ -31,7 +31,7 @@ public class WebDataUtils {
 	}
 
 	/**
-	 * ĞÂÎÅ ½Ó¿ÚÁ¬½Ó
+	 * æ–°é—» æ¥å£è¿æ¥
 	 */
 	public static String getNEWS(int newPage) {
 
@@ -43,7 +43,7 @@ public class WebDataUtils {
 	}
 
 	/**
-	 * ĞÂÎÅ ½Ó¿ÚÁ¬½Ó
+	 * æ–°é—» æ¥å£è¿æ¥
 	 */
 	public static String getBUDEJIE(int newPage) {
 		String BUDEJIE = "https://route.showapi.com/255-1?page=" + newPage

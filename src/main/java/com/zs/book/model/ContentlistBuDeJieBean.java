@@ -8,7 +8,7 @@ import android.text.TextUtils;
  * "http://mpic.spriteapp.cn/ugc/2016/03/06/56dc3e07d30f8.jpg", "image2":
  * "http://mpic.spriteapp.cn/ugc/2016/03/06/56dc3e07d30f8.jpg", "image3":
  * "http://mpic.spriteapp.cn/ugc/2016/03/06/56dc3e07d30f8.jpg", "text":
- * "\n        次奥 ，想骗老夫 ，肿么可能\n    ", "weixin_url":
+ * "\n        娆″ゥ 锛屾兂楠楄�佸か 锛岃偪涔堝彲鑳絓n    ", "weixin_url":
  * "http://m.budejie.com/detail-17501776.html/",
  *
  */

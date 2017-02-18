@@ -24,14 +24,14 @@ public abstract class BaseFragment extends Fragment {
 	protected int screenHeigh;
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
+							 Bundle savedInstanceState) {
 		base = getActivity();
 		DisplayMetrics dm = new DisplayMetrics();
-		// »ñÈ¡ÆÁÄ»ĞÅÏ¢
+		// è·å–å±å¹•ä¿¡æ¯
 		base.getWindowManager().getDefaultDisplay().getMetrics(dm);
 		screenWidth = dm.widthPixels;
 		screenHeigh = dm.heightPixels;
-		
+
 		utils = ImageUtils.newImageUtils(base);
 		sp = base.getSharedPreferences("config", Context.MODE_PRIVATE);
 		layout = inflater.inflate(getLayout(), null);
@@ -44,12 +44,12 @@ public abstract class BaseFragment extends Fragment {
 	protected abstract int getLayout();
 
 	/**
-	 * @ÔÚÖ÷Ïß³ÌÖĞ¶¨Òåutils ImageUtils utils =
+	 * @åœ¨ä¸»çº¿ç¨‹ä¸­å®šä¹‰utils ImageUtils utils =
 	 *               ImageUtils.newImageUtils(MainActivity.this);
 	 * @param iv
-	 *            ÉèÖÃÍ¼Æ¬µÄImageView
+	 *            è®¾ç½®å›¾ç‰‡çš„ImageView
 	 * @param path
-	 *            Í¼Æ¬µÄÂ·¾¶
+	 *            å›¾ç‰‡çš„è·¯å¾„
 	 */
 	protected void setImageViewBitmap(final ImageView iv, String path) {
 		if (path.endsWith(".gif")) {

@@ -29,7 +29,7 @@ public class ImageUtils {
 
 	public static ImageUtils newImageUtils(Activity context) {
 		DisplayMetrics dm = new DisplayMetrics();
-		// »ñÈ¡ÆÁÄ»ĞÅÏ¢
+		// è·å–å±å¹•ä¿¡æ¯
 		context.getWindowManager().getDefaultDisplay().getMetrics(dm);
 		screenWidth = dm.widthPixels;
 		screenHeigh = dm.heightPixels;
@@ -40,7 +40,7 @@ public class ImageUtils {
 
 	private ImageUtils(Context context) {
 		fileUtils = new FileUtils(context);
-		// Îª»º´æÇø·ÖÅä´óĞ¡
+		// ä¸ºç¼“å­˜åŒºåˆ†é…å¤§å°
 		imgCache = new LruCache<String, Bitmap>((int) Runtime.getRuntime()
 				.maxMemory() / 8) {
 			@Override
@@ -48,60 +48,60 @@ public class ImageUtils {
 				return value.getByteCount();
 			}
 		};
-		// ²ÎÊı Îª Í¬Ê±Æô¶¯¶àÉÙÌõÏß³Ì
+		// å‚æ•° ä¸º åŒæ—¶å¯åŠ¨å¤šå°‘æ¡çº¿ç¨‹
 		DownImageThread = Executors.newFixedThreadPool(3);
 	}
 
-	// ´æ´¢µ½»º´æÇø
+	// å­˜å‚¨åˆ°ç¼“å­˜åŒº
 	public void saveBitmapToMemory(String name, Bitmap bmp) {
 		imgCache.put(name, bmp);
 	}
 
-	// ´Ó»º´æÇø¶ÁÈ¡
+	// ä»ç¼“å­˜åŒºè¯»å–
 	public Bitmap getBitmapFromMemory(String name) {
 		return imgCache.get(name);
 	}
 
 	/**
-	 * ±ØĞëÔÚÖ÷Ïß³ÌÖĞµ÷ÓÃ¸Ã·½·¨
-	 * 
+	 * å¿…é¡»åœ¨ä¸»çº¿ç¨‹ä¸­è°ƒç”¨è¯¥æ–¹æ³•
+	 *
 	 * @param url
 	 * @param listener
 	 * @return
 	 */
 	public Bitmap getImageBitmap(final String url,
-			final OnImageListener listener) {
-		// ¼üºÍ´æ´¢µÄÃû³Æ
+								 final OnImageListener listener) {
+		// é”®å’Œå­˜å‚¨çš„åç§°
 		final String path = url.replaceAll("[\\W]", "");
-		// ´Ó»º´æÖĞ¶ÁÈ¡
+		// ä»ç¼“å­˜ä¸­è¯»å–
 		Bitmap bmp;
-		// »º´æÖĞÓĞ£¬Ö±½ÓÊ¹ÓÃ»º´æ
+		// ç¼“å­˜ä¸­æœ‰ï¼Œç›´æ¥ä½¿ç”¨ç¼“å­˜
 		if ((bmp = getBitmapFromMemory(path)) != null) {
-//			System.out.println("------´Ó»º´æÖĞ¶ÁÈ¡");
+//			System.out.println("------ä»ç¼“å­˜ä¸­è¯»å–");
 			return bmp;
 		}
 		if ((bmp = fileUtils.readBitmap(path)) != null) {
-			// Èç¹ûSDÖĞÓĞ£¬´æ´¢µ½»º´æ£¬²¢ÇÒÊ¹ÓÃ
-//			System.out.println("------´ÓSD¿¨ÖĞ¶ÁÈ¡");
+			// å¦‚æœSDä¸­æœ‰ï¼Œå­˜å‚¨åˆ°ç¼“å­˜ï¼Œå¹¶ä¸”ä½¿ç”¨
+//			System.out.println("------ä»SDå¡ä¸­è¯»å–");
 			saveBitmapToMemory(path, bmp);
 			return bmp;
 		} else {
-			// ÏÂÔØ
+			// ä¸‹è½½
 			final Handler handler = new Handler() {
 				@Override
 				public void handleMessage(Message msg) {
-					// ·µ»Ø
+					// è¿”å›
 					listener.onImageSuccess((Bitmap) msg.obj);
 				};
 			};
-//			System.out.println("-------Ê¹ÓÃÍøÂçÏÂÔØ");
+//			System.out.println("-------ä½¿ç”¨ç½‘ç»œä¸‹è½½");
 			DownImageThread.execute(new Runnable() {
 				@Override
 				public void run() {
-					// ÏÂÔØÍ¼Æ¬
-					// Ïß³ÌÖĞ·µ»Ø£¬±ØĞëÊ¹ÓÃ»Øµ÷
+					// ä¸‹è½½å›¾ç‰‡
+					// çº¿ç¨‹ä¸­è¿”å›ï¼Œå¿…é¡»ä½¿ç”¨å›è°ƒ
 					try {
-						// ÏÂÔØÍê±Ï
+						// ä¸‹è½½å®Œæ¯•
 						URL u = new URL(url);
 						InputStream is = u.openStream();
 						Bitmap bitmap = BitmapFactory.decodeStream(is);
@@ -110,10 +110,10 @@ public class ImageUtils {
 //						System.out.println("------width--" +width+"       height  "+height);
 //						System.out.println("------screenWidth--" +screenWidth+"       screenHeigh  "+screenHeigh);
 //						System.out.println("--------" + bitmap.getByteCount());
-						// ´æ´¢
+						// å­˜å‚¨
 						saveBitmapToMemory(path, bitmap);
 						fileUtils.saveBitmap(path, bitmap);
-						// ·¢ËÍ
+						// å‘é€
 						Message msg = handler.obtainMessage();
 						msg.obj = bitmap;
 						handler.sendMessage(msg);
@@ -127,7 +127,7 @@ public class ImageUtils {
 		return null;
 	}
 
-	// »Øµ÷½Ó¿Ú
+	// å›è°ƒæ¥å£
 	public interface OnImageListener {
 		public void onImageSuccess(Bitmap bmp);
 	}
