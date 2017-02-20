@@ -3,7 +3,6 @@ package com.zs.book.base;
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.DisplayMetrics;
@@ -13,13 +12,12 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.zs.book.utils.ImageUtils;
+import com.zs.book.utils.GlideUtils;
 
 public abstract class BaseFragment extends Fragment {
 	protected static Activity base;
 	protected View layout;
 	protected SharedPreferences sp;
-	private ImageUtils utils;
 	protected int screenWidth;
 	protected int screenHeigh;
 	@Override
@@ -32,7 +30,6 @@ public abstract class BaseFragment extends Fragment {
 		screenWidth = dm.widthPixels;
 		screenHeigh = dm.heightPixels;
 
-		utils = ImageUtils.newImageUtils(base);
 		sp = base.getSharedPreferences("config", Context.MODE_PRIVATE);
 		layout = inflater.inflate(getLayout(), null);
 		init();
@@ -55,15 +52,7 @@ public abstract class BaseFragment extends Fragment {
 		if (path.endsWith(".gif")) {
 			return;
 		}
-		Bitmap bmp = utils.getImageBitmap(path, new ImageUtils.OnImageListener() {
-			@Override
-			public void onImageSuccess(Bitmap bmp) {
-				iv.setImageBitmap(bmp);
-			}
-		});
-		if (bmp != null) {
-			iv.setImageBitmap(bmp);
-		}
+		GlideUtils.load(path,iv);
 	}
 
 	protected void tooast(String msg) {
