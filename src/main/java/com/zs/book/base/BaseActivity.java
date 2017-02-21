@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
 
+import com.tencent.stat.StatService;
+
 public abstract class BaseActivity extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,13 +24,13 @@ public abstract class BaseActivity extends FragmentActivity {
     @Override
     protected void onResume() {
         super.onResume();
-//        StatService.onResume(this);
+        StatService.onResume(this);
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-//        StatService.onPause(this);
+        StatService.onPause(this);
     }
 
     /**
