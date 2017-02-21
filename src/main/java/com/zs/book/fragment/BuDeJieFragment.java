@@ -1,7 +1,7 @@
 package com.zs.book.fragment;
 
 import com.zs.book.base.BaseFragment;
-import com.zs.book.test.R;
+import com.zs.book.R;
 import com.zs.book.xlistview.XListView;
 
 

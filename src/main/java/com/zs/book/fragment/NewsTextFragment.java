@@ -1,16 +1,7 @@
 package com.zs.book.fragment;
 
-import android.content.Intent;
-import android.text.TextUtils;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ImageView;
-import android.widget.TextView;
-
 import com.zs.book.base.BaseFragment;
-import com.zs.book.test.R;
+import com.zs.book.R;
 import com.zs.book.xlistview.XListView;
 
 

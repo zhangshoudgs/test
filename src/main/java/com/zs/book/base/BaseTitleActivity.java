@@ -4,7 +4,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import com.zs.book.test.R;
+import com.zs.book.R;
 
 /**
  * Created by admin on 2017/2/17.

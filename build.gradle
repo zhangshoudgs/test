@@ -5,7 +5,7 @@ android {
     buildToolsVersion "25.0.2"
 
     defaultConfig {
-        applicationId "com.zs.book.test"
+        applicationId "com.zs.book"
         minSdkVersion 17
         targetSdkVersion 23
         versionCode 1

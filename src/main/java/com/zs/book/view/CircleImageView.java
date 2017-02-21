@@ -18,7 +18,7 @@ import android.net.Uri;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
-import com.zs.book.test.R;
+import com.zs.book.R;
 
 /**
  * 圆形头像ImageView
