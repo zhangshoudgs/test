@@ -1,20 +1,21 @@
 package com.zs.book.activity;
 
 
-import com.zs.book.base.BaseActivity;
+import com.tencent.stat.StatConfig;
+import com.tencent.stat.StatService;
+import com.zs.book.R;
 import com.zs.book.base.BaseTitleActivity;
-import com.zs.book.test.R;
-
-import okhttp3.OkHttpClient;
 
 /**
  * Created by admin on 2017/2/17.
  */
 public class HomeActivity extends BaseTitleActivity {
+
     @Override
     protected void initBefore() {
         //测试测试
-
+        StatConfig.setAutoExceptionCaught(true);
+        StatService.trackCustomEvent(this,"onCreate","");
     }
 
     @Override

@@ -8,7 +8,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.zs.book.BaseApplication;
-import com.zs.book.test.R;
+import com.zs.book.R;
 
 /**
  * 图片加载类

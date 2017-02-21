@@ -4,8 +4,8 @@ import java.sql.Date;
 import java.text.SimpleDateFormat;
 
 public class WebDataUtils {
-	private static final String showapi_appid = "16436";
-	private static final String showapi_sign = "714b756c93124a1ba98195c99590fa6f";
+	private static final String showapi_appid = "16436";//32358
+	private static final String showapi_sign = "714b756c93124a1ba98195c99590fa6f";//b91513a2bd7c4b05a6f4b81b0dc5544d
 
 	/**
 	 * 笑话 纯图片 接口连接
