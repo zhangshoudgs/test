@@ -1,6 +1,110 @@
 [
     {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\google.png",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.github.jrvansuita\\MaterialAbout\\0.1.0\\res\\mipmap-xxxhdpi-v4\\google.png"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\ads.png",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.github.jrvansuita\\MaterialAbout\\0.1.0\\res\\mipmap-xxxhdpi-v4\\ads.png"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\google_play_store.png",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.github.jrvansuita\\MaterialAbout\\0.1.0\\res\\mipmap-xxxhdpi-v4\\google_play_store.png"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\help.png",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.github.jrvansuita\\MaterialAbout\\0.1.0\\res\\mipmap-xxxhdpi-v4\\help.png"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\youtube.png",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.github.jrvansuita\\MaterialAbout\\0.1.0\\res\\mipmap-xxxhdpi-v4\\youtube.png"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\bitbucket.png",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.github.jrvansuita\\MaterialAbout\\0.1.0\\res\\mipmap-xxxhdpi-v4\\bitbucket.png"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\donate.png",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.github.jrvansuita\\MaterialAbout\\0.1.0\\res\\mipmap-xxxhdpi-v4\\donate.png"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\android.png",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.github.jrvansuita\\MaterialAbout\\0.1.0\\res\\mipmap-xxxhdpi-v4\\android.png"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\google_play_games.png",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.github.jrvansuita\\MaterialAbout\\0.1.0\\res\\mipmap-xxxhdpi-v4\\google_play_games.png"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\google_plus.png",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.github.jrvansuita\\MaterialAbout\\0.1.0\\res\\mipmap-xxxhdpi-v4\\google_plus.png"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\dribbble.png",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.github.jrvansuita\\MaterialAbout\\0.1.0\\res\\mipmap-xxxhdpi-v4\\dribbble.png"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\instagram.png",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.github.jrvansuita\\MaterialAbout\\0.1.0\\res\\mipmap-xxxhdpi-v4\\instagram.png"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\facebook.png",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.github.jrvansuita\\MaterialAbout\\0.1.0\\res\\mipmap-xxxhdpi-v4\\facebook.png"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\linkedin.png",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.github.jrvansuita\\MaterialAbout\\0.1.0\\res\\mipmap-xxxhdpi-v4\\linkedin.png"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\github.png",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.github.jrvansuita\\MaterialAbout\\0.1.0\\res\\mipmap-xxxhdpi-v4\\github.png"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\share.png",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.github.jrvansuita\\MaterialAbout\\0.1.0\\res\\mipmap-xxxhdpi-v4\\share.png"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\star.png",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.github.jrvansuita\\MaterialAbout\\0.1.0\\res\\mipmap-xxxhdpi-v4\\star.png"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\whatsapp.png",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.github.jrvansuita\\MaterialAbout\\0.1.0\\res\\mipmap-xxxhdpi-v4\\whatsapp.png"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\website.png",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.github.jrvansuita\\MaterialAbout\\0.1.0\\res\\mipmap-xxxhdpi-v4\\website.png"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\feedback.png",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.github.jrvansuita\\MaterialAbout\\0.1.0\\res\\mipmap-xxxhdpi-v4\\feedback.png"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\changelog.png",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.github.jrvansuita\\MaterialAbout\\0.1.0\\res\\mipmap-xxxhdpi-v4\\changelog.png"
+    },
+    {
         "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\ic_launcher.png",
         "source": "D:\\MyApplication2\\gitApp\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\update.png",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.github.jrvansuita\\MaterialAbout\\0.1.0\\res\\mipmap-xxxhdpi-v4\\update.png"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\intrduce.png",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.github.jrvansuita\\MaterialAbout\\0.1.0\\res\\mipmap-xxxhdpi-v4\\intrduce.png"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\email.png",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.github.jrvansuita\\MaterialAbout\\0.1.0\\res\\mipmap-xxxhdpi-v4\\email.png"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\skype.png",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.github.jrvansuita\\MaterialAbout\\0.1.0\\res\\mipmap-xxxhdpi-v4\\skype.png"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\twitter.png",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.github.jrvansuita\\MaterialAbout\\0.1.0\\res\\mipmap-xxxhdpi-v4\\twitter.png"
     }
 ]

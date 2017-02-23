@@ -5,6 +5,7 @@ import com.tencent.stat.StatConfig;
 import com.tencent.stat.StatService;
 import com.zs.book.R;
 import com.zs.book.base.BaseTitleActivity;
+import com.zs.book.view.viewhelper.SampleHelper;
 
 /**
  * Created by admin on 2017/2/17.
@@ -20,11 +21,17 @@ public class HomeActivity extends BaseTitleActivity {
 
     @Override
     protected void init() {
-
+        SampleHelper.with(this).init().loadAbout();
     }
 
     @Override
     protected int getLayout() {
-        return R.layout.base_title_activity;
+        return R.layout.sample_view;
     }
+
+//
+//    @Override
+//    public boolean dispatchTouchEvent(MotionEvent ev) {
+//        return resideMenu.dispatchTouchEvent(ev);
+//    }
 }

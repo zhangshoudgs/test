@@ -19,7 +19,7 @@ public class BaseApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        String open_appid = "开放平台appid";
+        String open_appid = "1105124117";
         StatConfig.setAppKey(this, "Aqc" + open_appid);
     }
 }
