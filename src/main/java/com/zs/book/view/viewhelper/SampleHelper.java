@@ -2,7 +2,6 @@ package com.zs.book.view.viewhelper;/**
  * Created by admin on 2017/2/23.
  */
 
-import android.app.Activity;
 import android.content.Intent;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -10,6 +9,7 @@ import android.widget.Toast;
 
 import com.vansuita.materialabout.builder.AboutBuilder;
 import com.zs.book.R;
+import com.zs.book.base.BaseTitleActivity;
 
 /**
  * 作者 zs
@@ -17,14 +17,14 @@ import com.zs.book.R;
  */
 public class SampleHelper implements View.OnClickListener {
 
-    private Activity activity;
+    private BaseTitleActivity activity;
     private static int theme = R.style.AppThemeDark;
 
-    private SampleHelper(Activity activity) {
+    private SampleHelper(BaseTitleActivity activity) {
         this.activity = activity;
     }
 
-    public static SampleHelper with(Activity activity) {
+    public static SampleHelper with(BaseTitleActivity activity) {
         return new SampleHelper(activity);
     }
 

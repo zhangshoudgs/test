@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:2:1-24:12
+ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:2:1-25:12
 	package
 		ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:3:5-26
 		INJECTED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:2:1-24:12
 		INJECTED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml
 		INJECTED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml
 application
-ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:5:5-22:19
+ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:5:5-23:19
 MERGED from [com.android.support:appcompat-v7:25.1.1] D:\MyApplication2\gitApp\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:25.1.1] D:\MyApplication2\gitApp\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.1.1] D:\MyApplication2\gitApp\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\AndroidManifest.xml:25:5-20
@@ -152,32 +152,42 @@ MERGED from [com.android.support:support-compat:25.1.1] D:\MyApplication2\gitApp
 		ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:7:9-43
 	android:theme
 		ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:10:9-45
-activity#com.zs.book.activity.HomeActivity
-ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:11:9-19:20
-	android:name
-		ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:11:19-67
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:14:13-18:29
-action#android.intent.action.MAIN
-ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:15:17-69
-	android:name
-		ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:15:25-66
-category#android.intent.category.LAUNCHER
-ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:17:17-77
-	android:name
-		ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:17:27-74
 meta-data#TA_APPKEY
-ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:20:9-77
+ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:11:9-77
 	android:value
-		ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:20:45-74
+		ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:11:45-74
 	android:name
-		ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:20:20-44
+		ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:11:20-44
 meta-data#InstallChannel
-ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:21:9-81
+ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:12:9-81
 	android:value
-		ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:21:50-78
+		ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:12:50-78
 	android:name
-		ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:21:20-49
+		ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:12:20-49
+activity#com.zs.book.activity.home.MenuActivity
+ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:13:9-20:20
+	android:theme
+		ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:14:13-66
+	android:name
+		ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:13:19-61
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:16:13-19:29
+action#android.intent.action.MAIN
+ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:17:17-68
+	android:name
+		ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:18:17-76
+	android:name
+		ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:18:27-74
+activity#com.zs.book.activity.AboutMeActivity
+ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:21:9-62
+	android:name
+		ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:21:19-59
+activity#com.zs.book.activity.HomeActivity
+ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:22:9-69
+	android:name
+		ADDED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml:22:19-67
 uses-sdk
 INJECTED from D:\MyApplication2\gitApp\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.specyci:residemenu:1.6] D:\MyApplication2\gitApp\build\intermediates\exploded-aar\com.specyci\residemenu\1.6\AndroidManifest.xml:7:5-9:41

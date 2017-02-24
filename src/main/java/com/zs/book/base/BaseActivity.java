@@ -1,15 +1,19 @@
 package com.zs.book.base;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
 
 import com.tencent.stat.StatService;
+import com.zs.book.BaseApplication;
 
 public abstract class BaseActivity extends FragmentActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        BaseApplication.setActivity(this);
         initBefore();
         setContentView(getLayout());
         init();
@@ -57,5 +61,9 @@ public abstract class BaseActivity extends FragmentActivity {
         }catch (Exception e){
             throw e;
         }
+    }
+
+    public static Intent getJumpIntent(Class activity){
+      return new Intent(BaseApplication.getActivity(),activity);
     }
 }

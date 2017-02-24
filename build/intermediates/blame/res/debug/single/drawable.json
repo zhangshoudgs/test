@@ -116,6 +116,10 @@
         "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\drawable\\titlebar_menu_selector.xml",
+        "source": "D:\\MyApplication2\\gitApp\\src\\main\\res\\drawable\\titlebar_menu_selector.xml"
+    },
+    {
         "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
         "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\drawable\\abc_item_background_holo_light.xml"
     },
@@ -138,6 +142,10 @@
     {
         "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
         "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\drawable\\button_selector.xml",
+        "source": "D:\\MyApplication2\\gitApp\\src\\main\\res\\drawable\\button_selector.xml"
     },
     {
         "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",

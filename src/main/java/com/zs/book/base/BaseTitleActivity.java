@@ -10,7 +10,6 @@ import com.zs.book.R;
  * Created by admin on 2017/2/17.
  */
 public abstract class BaseTitleActivity extends BaseActivity implements View.OnClickListener{
-
     private View inflate;
     private TextView title_left;
     private TextView title_tv;
@@ -26,9 +25,9 @@ public abstract class BaseTitleActivity extends BaseActivity implements View.OnC
     }
 
     private void initTitleView() {
-        title_left = findViewBy(R.id.title_left);
-        title_tv = findViewBy(R.id.title_tv);
-        title_right = findViewBy(R.id.title_right);
+        title_left = findViewBy(R.id.title_left,this);
+        title_tv = findViewBy(R.id.title_tv,this);
+        title_right = findViewBy(R.id.title_right,this);
     }
 
     @Override
@@ -57,5 +56,31 @@ public abstract class BaseTitleActivity extends BaseActivity implements View.OnC
      * 右侧的确定
      */
     protected void onSubmitClick() {
+    }
+
+    /**
+     * 获取view
+     * @param resId
+     * @param <T>
+     * @return
+     */
+    protected <T extends View> T findViewBy(int resId, View.OnClickListener oc){
+        try{
+            T viewById = (T)inflate.findViewById(resId);
+            viewById.setOnClickListener(oc);
+            return viewById;
+        }catch (Exception e){
+            throw e;
+        }
+    }
+    /**
+     * 获取view
+     */
+    protected <T extends View> T findViewBy(int resId){
+        try{
+            return (T)inflate.findViewById(resId);
+        }catch (Exception e){
+            throw e;
+        }
     }
 }

@@ -1,6 +1,2 @@
-CHANGED,D:\MyApplication2\gitApp\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\android\support\v7\appcompat\R$id$override.class
 CHANGED,D:\MyApplication2\gitApp\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
-CHANGED,D:\MyApplication2\gitApp\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\android\support\design\R$id$override.class
-CHANGED,D:\MyApplication2\gitApp\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\zs\book\activity\HomeActivity$override.class
-CHANGED,D:\MyApplication2\gitApp\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\zs\book\R$id$override.class
-CHANGED,D:\MyApplication2\gitApp\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\vansuita\materialabout\R$id$override.class
+CHANGED,D:\MyApplication2\gitApp\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\zs\book\activity\home\MenuActivity$override.class

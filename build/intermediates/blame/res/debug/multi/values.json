@@ -14708,6 +14708,27 @@
                         "endOffset": 804
                     }
                 }
+            },
+            {
+                "to": {
+                    "startLine": 2053,
+                    "startColumn": 4,
+                    "startOffset": 160019,
+                    "endLine": 2056,
+                    "endColumn": 12,
+                    "endOffset": 160166
+                },
+                "from": {
+                    "file": "D:\\MyApplication2\\gitApp\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 47,
+                        "startColumn": 4,
+                        "startOffset": 1986,
+                        "endLine": 50,
+                        "endColumn": 12,
+                        "endOffset": 2136
+                    }
+                }
             }
         ]
     }

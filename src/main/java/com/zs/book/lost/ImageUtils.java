@@ -92,7 +92,7 @@ public class ImageUtils {
 				public void handleMessage(Message msg) {
 					// 返回
 					listener.onImageSuccess((Bitmap) msg.obj);
-				};
+				}
 			};
 //			System.out.println("-------使用网络下载");
 			DownImageThread.execute(new Runnable() {
@@ -129,6 +129,6 @@ public class ImageUtils {
 
 	// 回调接口
 	public interface OnImageListener {
-		public void onImageSuccess(Bitmap bmp);
+		void onImageSuccess(Bitmap bmp);
 	}
 }

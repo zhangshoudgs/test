@@ -12,12 +12,12 @@
         "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\abc_search_view.xml"
     },
     {
-        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
-        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\abc_list_menu_item_checkbox.xml"
-    },
-    {
         "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
         "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.1\\res\\layout\\design_layout_tab_text.xml"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
         "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
@@ -48,12 +48,12 @@
         "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.1\\res\\layout\\design_navigation_menu.xml"
     },
     {
-        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
-        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
-    },
-    {
         "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
         "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
         "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\layout\\residemenu_item.xml",
@@ -110,6 +110,14 @@
     {
         "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\layout\\settings.xml",
+        "source": "D:\\MyApplication2\\gitApp\\src\\main\\res\\layout\\settings.xml"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\layout\\home.xml",
+        "source": "D:\\MyApplication2\\gitApp\\src\\main\\res\\layout\\home.xml"
     },
     {
         "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\layout\\xlistview_footer.xml",
@@ -200,6 +208,14 @@
         "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "D:\\MyApplication2\\gitApp\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\layout\\profile.xml",
+        "source": "D:\\MyApplication2\\gitApp\\src\\main\\res\\layout\\profile.xml"
+    },
+    {
         "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
         "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
@@ -212,12 +228,16 @@
         "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
-        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\layout\\xlistview_header.xml",
-        "source": "D:\\MyApplication2\\gitApp\\src\\main\\res\\layout\\xlistview_header.xml"
-    },
-    {
         "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_custom_big.xml",
         "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\layout\\calendar.xml",
+        "source": "D:\\MyApplication2\\gitApp\\src\\main\\res\\layout\\calendar.xml"
+    },
+    {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\layout\\xlistview_header.xml",
+        "source": "D:\\MyApplication2\\gitApp\\src\\main\\res\\layout\\xlistview_header.xml"
     },
     {
         "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",

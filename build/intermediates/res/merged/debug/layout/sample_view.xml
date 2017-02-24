@@ -29,13 +29,17 @@
             android:layout_weight="0.33"
             android:text="@string/custom_theme" />
     </LinearLayout>
-
-    <FrameLayout
-        android:id="@+id/about"
-        android:background="#00ff00"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/about"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
 
 </LinearLayout>

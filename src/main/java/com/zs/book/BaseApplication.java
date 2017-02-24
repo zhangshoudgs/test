@@ -16,6 +16,10 @@ public class BaseApplication extends Application {
         return activity;
     }
 
+    public static void setActivity(BaseActivity activity) {
+        BaseApplication.activity = activity;
+    }
+
     @Override
     public void onCreate() {
         super.onCreate();

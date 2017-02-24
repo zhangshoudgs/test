@@ -5,7 +5,6 @@ import com.tencent.stat.StatConfig;
 import com.tencent.stat.StatService;
 import com.zs.book.R;
 import com.zs.book.base.BaseTitleActivity;
-import com.zs.book.view.viewhelper.SampleHelper;
 
 /**
  * Created by admin on 2017/2/17.
@@ -21,7 +20,7 @@ public class HomeActivity extends BaseTitleActivity {
 
     @Override
     protected void init() {
-        SampleHelper.with(this).init().loadAbout();
+//        SampleHelper.with(this).init().loadAbout();
     }
 
     @Override

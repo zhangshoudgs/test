@@ -1,5 +1,9 @@
 [
     {
+        "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\gesture.png",
+        "source": "D:\\MyApplication2\\gitApp\\src\\main\\res\\drawable-ldpi\\gesture.png"
+    },
+    {
         "merged": "D:\\MyApplication2\\gitApp\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_launcher.png",
         "source": "D:\\MyApplication2\\gitApp\\build\\intermediates\\exploded-aar\\com.specyci\\residemenu\\1.6\\res\\drawable-ldpi-v4\\ic_launcher.png"
     }
