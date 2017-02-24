@@ -115,6 +115,7 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 25 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="MiPush_SDK_Client_3_1_2" level="project" />
     <orderEntry type="library" exported="" name="MaterialAbout-0.1.0" level="project" />
     <orderEntry type="library" exported="" name="residemenu-1.6" level="project" />
     <orderEntry type="library" exported="" name="design-25.1.1" level="project" />

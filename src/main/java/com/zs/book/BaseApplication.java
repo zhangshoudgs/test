@@ -1,6 +1,4 @@
-package com.zs.book;/**
- * Created by admin on 2017/2/20.
- */
+package com.zs.book;
 
 import android.app.Application;
 
@@ -25,5 +23,6 @@ public class BaseApplication extends Application {
         super.onCreate();
         String open_appid = "1105124117";
         StatConfig.setAppKey(this, "Aqc" + open_appid);
+        ApplicationUtils.initMiPush(this);
     }
 }
