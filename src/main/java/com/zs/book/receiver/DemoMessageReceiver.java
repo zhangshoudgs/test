@@ -3,6 +3,7 @@ package com.zs.book.receiver;/**
  */
 
 import android.content.Context;
+import android.content.Intent;
 import android.text.TextUtils;
 
 import com.xiaomi.mipush.sdk.ErrorCode;
@@ -50,7 +51,13 @@ public class DemoMessageReceiver extends PushMessageReceiver {
         } else if(!TextUtils.isEmpty(message.getUserAccount())) {
             mUserAccount=message.getUserAccount();
         }
+//        Intent intent = new Intent(context, MenuActivity.class);
+//        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//        context.startActivity(intent);
+        Intent intent = context.getPackageManager().getLaunchIntentForPackage(context.getPackageName());
+        context.startActivity(intent);
     }
+    //messageId={tcm43b004879222699796l},passThrough={0},alias={null},topic={**ALL**},userAccount={null},content={},description={321321321},title={123123123},isNotified={false},notifyId={0},notifyType={7}, category={null}, extra={{source=op, notify_foreground=1, model_not_in=,scorpio,MIX, __planId__=61314}}
     @Override
     public void onNotificationMessageArrived(Context context, MiPushMessage message) {
         mMessage = message.getContent();
