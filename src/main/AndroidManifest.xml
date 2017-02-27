@@ -21,7 +21,7 @@
         <meta-data android:name="TA_APPKEY" android:value="Aqc1105124117" />
         <meta-data android:name="InstallChannel" android:value="OpenPlatform" />
         <activity android:name=".activity.home.MenuActivity"
-            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:theme="@style/AppTheme"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

@@ -4,9 +4,11 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.annotation.IdRes;
 import android.support.v4.app.Fragment;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -15,23 +17,25 @@ import android.widget.Toast;
 import com.zs.book.utils.GlideUtils;
 
 public abstract class BaseFragment extends Fragment {
-	protected static Activity base;
+	protected static Activity activity;
 	protected View layout;
 	protected SharedPreferences sp;
 	protected int screenWidth;
 	protected int screenHeigh;
+	private static Toast toast;
+
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 							 Bundle savedInstanceState) {
-		base = getActivity();
+		layout = inflater.inflate(getLayout(), container,false);
+		activity = getActivity();
 		DisplayMetrics dm = new DisplayMetrics();
 		// 获取屏幕信息
-		base.getWindowManager().getDefaultDisplay().getMetrics(dm);
+		activity.getWindowManager().getDefaultDisplay().getMetrics(dm);
 		screenWidth = dm.widthPixels;
 		screenHeigh = dm.heightPixels;
 
-		sp = base.getSharedPreferences("config", Context.MODE_PRIVATE);
-		layout = inflater.inflate(getLayout(), null);
+		sp = activity.getSharedPreferences("config", Context.MODE_PRIVATE);
 		init();
 		return layout;
 	}
@@ -55,7 +59,28 @@ public abstract class BaseFragment extends Fragment {
 		GlideUtils.load(path,iv);
 	}
 
-	protected void tooast(String msg) {
-		Toast.makeText(base, msg, Toast.LENGTH_SHORT).show();
+	protected static void showToast(String msg) {
+		if (toast==null)
+			toast = Toast.makeText(activity, msg, Toast.LENGTH_SHORT);
+		else toast.setText(msg);
+		toast.show();
+	}
+
+	protected <T extends View>T findViewBy(@IdRes int id) {
+		try{
+			return (T) layout.findViewById(id);
+		}catch (Exception e){
+			throw e;
+		}
+	}
+
+	public boolean dispatchTouchEvent(MotionEvent ev){//用来分派event
+		return false;
+	}
+	public boolean onInterceptTouchEvent(MotionEvent ev){//
+		return false;
+	}
+	public boolean onTouchEvent(MotionEvent ev){//用来处理event
+		return false;
 	}
 }

@@ -35,7 +35,7 @@ public abstract class BaseTitleActivity extends BaseActivity implements View.OnC
         int id = v.getId();
         switch (id){
             case R.id.title_left:
-                onBackPressed();
+                onBackClick();
                 break;
             case R.id.title_tv:
                 onTitleClick();
@@ -44,6 +44,10 @@ public abstract class BaseTitleActivity extends BaseActivity implements View.OnC
                 onSubmitClick();
                 break;
         }
+    }
+
+    protected void onBackClick() {
+        onBackPressed();
     }
 
     /**

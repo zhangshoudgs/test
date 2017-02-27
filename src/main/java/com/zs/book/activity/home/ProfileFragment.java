@@ -1,12 +1,12 @@
 package com.zs.book.activity.home;
 
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import android.view.MotionEvent;
 
+import com.yalantis.phoenix.PullToRefreshView;
 import com.zs.book.R;
+import com.zs.book.base.BaseFragment;
+import com.zs.book.view.FlowingDrawer.ElasticDrawer;
+import com.zs.book.view.FlowingDrawer.FlowingDrawer;
 
 /**
  * User: special
@@ -14,11 +14,56 @@ import com.zs.book.R;
  * Time: 下午1:31
  * Mail: specialcyci@gmail.com
  */
-public class ProfileFragment extends Fragment {
+public class ProfileFragment extends BaseFragment {
+    private PullToRefreshView mPullToRefreshView;
+
+    private FlowingDrawer mDrawer;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.profile, container, false);
+    protected void init() {
+        mPullToRefreshView = findViewBy(R.id.pull_to_refresh);
+        mPullToRefreshView.setOnRefreshListener(new PullToRefreshView.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                mPullToRefreshView.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        mPullToRefreshView.setRefreshing(false);
+                    }
+                }, 1000);
+            }
+        });
+
+        mDrawer = findViewBy(R.id.drawerlayout);
+        mDrawer.setTouchMode(ElasticDrawer.TOUCH_MODE_BEZEL);
+        mDrawer.setOnDrawerStateChangeListener(new ElasticDrawer.OnDrawerStateChangeListener() {
+            @Override
+            public void onDrawerStateChange(int oldState, int newState) {
+                if (newState == ElasticDrawer.STATE_CLOSED) {
+                    showToast("关闭!");
+                }
+            }
+
+            @Override
+            public void onDrawerSlide(float openRatio, int offsetPixels) {
+                showToast("打开!  openRatio=" + openRatio + " ,offsetPixels=" + offsetPixels);
+            }
+        });
+    }
+
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        return mPullToRefreshView.dispatchTouchEvent(ev)||mDrawer.dispatchTouchEvent(ev);
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent ev) {
+        return mPullToRefreshView.onTouchEvent(ev)||mDrawer.onTouchEvent(ev);
+    }
+
+    @Override
+    protected int getLayout() {
+        return R.layout.profile;
     }
 
 }

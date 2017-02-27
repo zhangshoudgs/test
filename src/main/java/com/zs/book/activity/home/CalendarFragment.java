@@ -1,16 +1,13 @@
 package com.zs.book.activity.home;
 
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import com.zs.book.R;
+import com.zs.book.base.BaseFragment;
 
 import java.util.ArrayList;
 
@@ -20,17 +17,19 @@ import java.util.ArrayList;
  * Time: 下午3:26
  * Mail: specialcyci@gmail.com
  */
-public class CalendarFragment extends Fragment {
+public class CalendarFragment extends BaseFragment {
 
-    private View parentView;
     private ListView listView;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        parentView = inflater.inflate(R.layout.calendar, container, false);
-        listView   = (ListView) parentView.findViewById(R.id.listView);
+    protected void init() {
+        listView   = findViewBy(R.id.listView);
         initView();
-        return parentView;
+    }
+
+    @Override
+    protected int getLayout() {
+        return R.layout.calendar;
     }
 
     private void initView(){
