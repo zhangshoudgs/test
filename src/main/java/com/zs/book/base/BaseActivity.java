@@ -6,7 +6,7 @@ import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.widget.Toast;
 
-import com.tencent.stat.StatService;
+//import com.tencent.stat.StatService;
 import com.zs.book.BaseApplication;
 
 public abstract class BaseActivity extends FragmentActivity {
@@ -31,13 +31,13 @@ public abstract class BaseActivity extends FragmentActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        StatService.onResume(this);
+//        StatService.onResume(this);
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        StatService.onPause(this);
+//        StatService.onPause(this);
     }
 
     /**

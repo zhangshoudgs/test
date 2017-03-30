@@ -21,6 +21,7 @@ public class MenuActivity extends BaseTitleActivity implements View.OnClickListe
     private ResideMenuItem itemCalendar;
     private ResideMenuItem itemSettings;
     private ResideMenuItem aboutMe;
+    private ResideMenuItem itemLogin;
     private BaseFragment currentFragment;
 
 
@@ -53,18 +54,21 @@ public class MenuActivity extends BaseTitleActivity implements View.OnClickListe
         itemCalendar = new ResideMenuItem(this, R.drawable.icon_calendar, "日期");
         itemSettings = new ResideMenuItem(this, R.drawable.icon_settings, "设置");
         aboutMe = new ResideMenuItem(this, R.drawable.icon_settings, "关于");
+        itemLogin = new ResideMenuItem(this, R.drawable.icon_settings, "登录");
 
         itemHome.setOnClickListener(this);
         itemProfile.setOnClickListener(this);
         itemCalendar.setOnClickListener(this);
         itemSettings.setOnClickListener(this);
         aboutMe.setOnClickListener(this);
+        itemLogin.setOnClickListener(this);
 
         resideMenu.addMenuItem(itemHome, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(itemProfile, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(itemCalendar, ResideMenu.DIRECTION_RIGHT);
         resideMenu.addMenuItem(itemSettings, ResideMenu.DIRECTION_RIGHT);
         resideMenu.addMenuItem(aboutMe, ResideMenu.DIRECTION_RIGHT);
+        resideMenu.addMenuItem(itemLogin, ResideMenu.DIRECTION_RIGHT);
 
         // You can disable a direction by setting ->
 //        resideMenu.setSwipeDirectionDisable(ResideMenu.DIRECTION_LEFT);
@@ -117,6 +121,8 @@ public class MenuActivity extends BaseTitleActivity implements View.OnClickListe
             changeFragment(new CalendarFragment());
         }else if (view == itemSettings){
             changeFragment(new SettingsFragment());
+        }else if (view == itemLogin){
+            changeFragment(new LoginFragment());
         }else if (view == aboutMe){
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 startActivity(getJumpIntent(AboutMeActivity.class), ActivityOptions.makeSceneTransitionAnimation(this).toBundle());

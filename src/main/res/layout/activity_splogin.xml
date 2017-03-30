@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/txt_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:text="登录名称"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edit_phone_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_phone"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/txt_phone"
+        android:layout_alignTop="@+id/txt_phone"
+        android:background="@drawable/gray_color_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="8dp"
+        android:text="13800138006"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_phone"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip" />
+
+    <TextView
+        android:id="@+id/txt_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/txt_phone"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:text="登录密码"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_pwd"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edit_phone_num"
+        android:layout_marginLeft="8dp"
+        android:layout_alignTop="@+id/txt_pwd"
+        android:layout_toRightOf="@+id/txt_pwd"
+        android:background="@drawable/gray_color_bg"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:inputType="textPassword"
+        android:paddingLeft="8dp"
+        android:text="123456"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_pwd"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_pwd"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_bg"
+        android:text="登录"
+        android:textColor="#fff"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/txt_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:onClick="onRegisterClick"
+        android:text="快速注册"
+        android:textColor="#848689"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/txt_forget_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_register"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:onClick="onForgetPwdClick"
+        android:text="忘记密码"
+        android:textColor="#848689"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:layout_below="@id/txt_register"
+        android:layout_marginTop="40dip"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:gravity="left|center_vertical"
+            android:text="测试账号:13800138006"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:gravity="left|center_vertical"
+            android:text="测试密码:123456"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:gravity="left|center_vertical"
+            android:text="完整源码下载地址:http://www.tp-shop.cn/"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="23.0dip"
+        android:layout_marginLeft="60.0dip"
+        android:layout_marginRight="60.0dip"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/wx_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/wx_icon_txt"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/button_logoin_wx_selector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center"
+                android:text="微信登录"
+                android:textColor="#ff000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/qq_icon_txt"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:background="@drawable/button_logoin_qq_selector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="QQ登录"
+                android:textColor="#ff000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

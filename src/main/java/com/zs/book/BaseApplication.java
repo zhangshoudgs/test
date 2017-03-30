@@ -2,7 +2,6 @@ package com.zs.book;
 
 import android.app.Application;
 
-import com.tencent.stat.StatConfig;
 import com.zs.book.base.BaseActivity;
 
 /**
@@ -21,8 +20,8 @@ public class BaseApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        String open_appid = "1105124117";
-        StatConfig.setAppKey(this, "Aqc" + open_appid);
+//        String open_appid = "1105124117";
+//        StatConfig.setAppKey(this, "Aqc" + open_appid);
         ApplicationUtils.initMiPush(this);
     }
 }

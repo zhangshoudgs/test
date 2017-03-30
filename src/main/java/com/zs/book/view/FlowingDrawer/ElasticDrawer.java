@@ -1,6 +1,8 @@
 
 package com.zs.book.view.FlowingDrawer;
 
+import android.animation.Animator;
+import android.animation.ValueAnimator;
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -21,8 +23,6 @@ import android.view.animation.Interpolator;
 import android.view.animation.OvershootInterpolator;
 import android.widget.Scroller;
 
-import com.nineoldandroids.animation.Animator;
-import com.nineoldandroids.animation.ValueAnimator;
 import com.zs.book.R;
 
 /**

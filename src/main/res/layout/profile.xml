@@ -2,41 +2,37 @@
 
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <com.zs.book.view.FlowingDrawer.PullView
-        android:id="@+id/pull_to_refresh"
+
+    <com.zs.book.view.FlowingDrawer.FlowingDrawer
+        android:id="@+id/drawerlayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <com.zs.book.view.FlowingDrawer.FlowingDrawer
-            android:id="@+id/drawerlayout"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        app:edMenuBackground="#dddddd"
+        app:edMenuSize="260dp"
+        app:edPosition="1">
+        <!--content-->
+        <RelativeLayout
+            android:id="@+id/content"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:clipChildren="false"
-            android:clipToPadding="false"
-            app:edPosition="1"
-            app:edMenuSize="260dp"
-            app:edMenuBackground="#dddddd">
-            <!--content-->
-            <RelativeLayout
-                android:id="@+id/content"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-            <!--menu-->
-            <com.zs.book.view.FlowingDrawer.FlowingMenuLayout
-                android:id="@+id/menulayout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+            android:layout_height="match_parent" />
+        <!--menu-->
+        <com.zs.book.view.FlowingDrawer.FlowingMenuLayout
+            android:id="@+id/menulayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-                <FrameLayout
-                    android:id="@+id/id_container_menu"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+            <FrameLayout
+                android:id="@+id/id_container_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
-            </com.zs.book.view.FlowingDrawer.FlowingMenuLayout>
-        </com.zs.book.view.FlowingDrawer.FlowingDrawer>
-    </com.zs.book.view.FlowingDrawer.PullView>
+        </com.zs.book.view.FlowingDrawer.FlowingMenuLayout>
+    </com.zs.book.view.FlowingDrawer.FlowingDrawer>
 
 </FrameLayout>
