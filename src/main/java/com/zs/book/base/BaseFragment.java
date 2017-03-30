@@ -8,7 +8,6 @@ import android.support.annotation.IdRes;
 import android.support.v4.app.Fragment;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -72,15 +71,5 @@ public abstract class BaseFragment extends Fragment {
 		}catch (Exception e){
 			throw e;
 		}
-	}
-
-	public boolean dispatchTouchEvent(MotionEvent ev){//用来分派event
-		return false;
-	}
-	public boolean onInterceptTouchEvent(MotionEvent ev){//
-		return false;
-	}
-	public boolean onTouchEvent(MotionEvent ev){//用来处理event
-		return false;
 	}
 }

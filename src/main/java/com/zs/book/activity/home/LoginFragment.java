@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.alibaba.fastjson.JSON;
 import com.tencent.connect.UserInfo;
 import com.tencent.connect.common.Constants;
 import com.tencent.tauth.IUiListener;
@@ -14,6 +15,7 @@ import com.tencent.tauth.Tencent;
 import com.tencent.tauth.UiError;
 import com.zs.book.R;
 import com.zs.book.base.BaseFragment;
+import com.zs.book.model.bean.UserBean;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -51,49 +53,55 @@ public class LoginFragment extends BaseFragment {
     protected int getLayout() {
         return R.layout.activity_splogin;
     }
+    private IUiListener iUiListener = new IUiListener() {
+        @Override
+        public void onComplete(Object o) {
+            try {
+                initOpenidAndToken(new JSONObject(o.toString()));
+                String s = o.toString();
+                userInfo = new UserInfo(getActivity(), mTencent.getQQToken());
+                userInfo.getUserInfo(new IUiListener() {
+                    @Override
+                    public void onComplete(Object o) {
+                        String s1 = o.toString();
+                        try {
+                            JSONObject jsonObject = new JSONObject(s1);
+                            UserBean userBean = JSON.parseObject(jsonObject.toString(), UserBean.class);
+                        } catch (JSONException e) {
+                        }
 
+                    }
+
+                    @Override
+                    public void onError(UiError uiError) {
+                        Toast.makeText(activity, uiError.errorMessage, Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onCancel() {
+
+                    }
+                });
+            } catch (JSONException e) {
+            }
+        }
+
+        @Override
+        public void onError(UiError uiError) {
+
+        }
+
+        @Override
+        public void onCancel() {
+
+        }
+    };
     public void login()
     {
         mTencent = Tencent.createInstance("1105124117", getActivity());
         if (!mTencent.isSessionValid())
         {
-            mTencent.login(this, SCOPE, new IUiListener() {
-                @Override
-                public void onComplete(Object o) {
-                    try {
-                        initOpenidAndToken(new JSONObject(o.toString()));
-                    } catch (JSONException e) {
-                    }
-
-                    String s = o.toString();
-                    userInfo = new UserInfo(getActivity(), mTencent.getQQToken());
-                    userInfo.getUserInfo(new IUiListener() {
-                        @Override
-                        public void onComplete(Object o) {
-                            String s1 = o.toString();
-                        }
-
-                        @Override
-                        public void onError(UiError uiError) {
-                            Toast.makeText(activity, uiError.errorMessage, Toast.LENGTH_SHORT).show();
-                        }
-
-                        @Override
-                        public void onCancel() {
-
-                        }
-                    });
-//                    getUserInfo();
-                }
-                @Override
-                public void onError(UiError uiError) {
-
-                }
-                @Override
-                public void onCancel() {
-
-                }
-            });
+            mTencent.login(this, SCOPE, iUiListener);
         }
     }
     public void initOpenidAndToken(JSONObject jsonObject) {
@@ -111,22 +119,10 @@ public class LoginFragment extends BaseFragment {
         } catch(Exception e) {
         }
     }
+
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        Tencent.onActivityResultData(requestCode, resultCode, data, new IUiListener() {
-            @Override
-            public void onComplete(Object o) {
-                String s = o.toString();
-            }
-            @Override
-            public void onError(UiError uiError) {
-
-            }
-
-            @Override
-            public void onCancel() {
-
-            }
-        });
+        super.onActivityResult(requestCode, resultCode, data);
+        Tencent.onActivityResultData(requestCode, resultCode, data, iUiListener);
     }
 }

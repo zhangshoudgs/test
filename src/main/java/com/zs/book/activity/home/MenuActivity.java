@@ -101,7 +101,7 @@ public class MenuActivity extends BaseTitleActivity implements View.OnClickListe
         if (resideMenu.isOpened()){
             return resideMenu.dispatchTouchEvent(ev) || super.dispatchTouchEvent(ev);
         }
-        boolean b = currentFragment.dispatchTouchEvent(ev)||resideMenu.dispatchTouchEvent(ev) || super.dispatchTouchEvent(ev);
+        boolean b = resideMenu.dispatchTouchEvent(ev) || super.dispatchTouchEvent(ev);
         return b;
     }
 
