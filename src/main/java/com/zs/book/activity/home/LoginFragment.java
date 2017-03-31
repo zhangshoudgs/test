@@ -58,14 +58,12 @@ public class LoginFragment extends BaseFragment {
         public void onComplete(Object o) {
             try {
                 initOpenidAndToken(new JSONObject(o.toString()));
-                String s = o.toString();
                 userInfo = new UserInfo(getActivity(), mTencent.getQQToken());
                 userInfo.getUserInfo(new IUiListener() {
                     @Override
                     public void onComplete(Object o) {
-                        String s1 = o.toString();
                         try {
-                            JSONObject jsonObject = new JSONObject(s1);
+                            JSONObject jsonObject = new JSONObject(o.toString());
                             UserBean userBean = JSON.parseObject(jsonObject.toString(), UserBean.class);
                         } catch (JSONException e) {
                         }

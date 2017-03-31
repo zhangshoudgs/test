@@ -20,13 +20,16 @@
         android:theme="@style/AppThemeLight">
         <meta-data android:name="TA_APPKEY" android:value="Aqc1105124117" />
         <meta-data android:name="InstallChannel" android:value="OpenPlatform" />
-        <activity android:name=".activity.home.MenuActivity"
-            android:theme="@style/AppTheme"
+        <activity android:name=".activity.welcome.WelcomeActivity"
+            android:theme="@style/AppThemeLight"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".activity.home.MenuActivity" >
         </activity>
         <activity android:name=".activity.AboutMeActivity" />
         <activity android:name="com.zs.book.activity.HomeActivity"/>
